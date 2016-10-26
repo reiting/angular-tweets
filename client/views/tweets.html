@@ -1,1 +1,13 @@
-<h1>Hello World 2!</h1>
+
+<h1>Tweets!</h1>
+<h3>What's going on?</h3>
+
+<div>
+    <!--you are putting the things in ng-model on scope.-->
+    <input type="text" ng-model="tweet.text" placeholder="Enter tweet here">
+    <ul id="tweetText">
+        <li ng-repeat ="thisOneTweet in tweets">
+            Message: {{thisOneTweet.text}}, User: {{ name }} </li>
+    </ul>
+    <button ng-click="printMyTweet()">POST</button>
+ </div>
